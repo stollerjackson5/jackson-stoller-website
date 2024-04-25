@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Portfolio</title>
+    <link rel="icon" type="image/png" href="pepper.png">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .container-portfolio {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center; /* Align rows with the center */
+            margin: 15px;
+        }
+        .row {
+            display: flex;
+            width: 100%;
+            margin-bottom: 20px;
+            align-items: center; /* Align items within row with the center */
+        }
+        .left-container-portfolio,
+        .right-container-portfolio {
+            flex: 0 0 48%;
+            margin: 15px;
+        }
+        .screenshot {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+            border: 1px solid #000;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        }
+        .description {
+            border: 1px solid #000;
+            background-color: #fff;
+            padding: 20px;
+            display: inline-block; /* Make description boxes wrap around content */
+            max-width: 80%; /* Adjust max-width as needed */
+            text-align: left; /* Align content within description box */
+            border-radius: 5%;
+            margin: 15px;
+        }
+        .right-container-portfolio {
+            display: flex;
+            justify-content: center; /* Align description box in center of column */
+        }
+        .portfolio-title {
+            text-align: center;
+            font-size: 30px;
+            margin-bottom: 8px;
+        }
+        .summary {
+            text-align: left;
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav>
+            <a href="./index.html">home</a>
+            <a href="./resume.html">resume</a>
+            <a href="./portfolio.html">portfolio</a>
+            <a href="./contact.html">contact</a>
+            <a href="https://skateschool.substack.com/">skate school</a>
+            <a href="./hobbies.html">hobbies</a>
+        </nav>
+    </header>
+    <div class="container-portfolio">
+        <h1 class="left-container-portfolio">Financial Reporting (Power BI)</h1>
+        <p class="description">Using a myriad of data sources (Netsuite, Salesforce, Sage, .xlsx, Sharepoint, etc.) I was able to build a company-wide financial reporting package. This organization is a PE-owned firm, so EBITDA metrics / operational efficiencies are imperative to convey to the user. The report itself is built and deployed using Power BI. Consisting of 32 unique report pages in total, this page shows 5 high-level, common financial reporting features.</p>
+        <!-- Net Income Analysis -->
+        <div class="row">
+            <div class="left-container-portfolio">
+                <img class="screenshot" src="revenue_breakdown.PNG" alt="Screenshot 1">
+            </div>
+            <div class="right-container-portfolio">
+                <div class="description">
+                    <h2><b>Revenue Analysis</b></h2>
+                    <br>
+                    <ul>
+                        <li>Dynamic page with buttons allowing user to flip between MTD / YTD metrics and between NI / NOI</li>
+                        <br>
+                        <li>Income Statement metrics compared to budget, forecast and prior year</li>
+                        <br>
+                        <li>User able to dissect each business unit for analysis</li>
+                        <br>
+                        <li>Imperative for understanding Net Operating Income stability</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Utilization -->
+        <div class="row">
+            <div class="right-container-portfolio">
+                <div class="description">
+                    <h2><b>Utilization</b></h2>
+                    <br>
+                    <ul>
+                        <li>Robust utilization analysis</li>
+                        <br>
+                        <li>Looks at billable and total hours worked per employee</li>
+                        <br>
+                        <li>Critical in staffing decisions</li>
+                        <br>
+                        <li>Allows user to drill down page by specific employee and/or employee segment</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="left-container-portfolio">
+                <img class="screenshot" src="utilization.PNG" alt="Screenshot 2">
+            </div>
+        </div>
+        <!-- L12M Trends -->
+        <div class="row">
+            <div class="left-container-portfolio">
+                <img class="screenshot" src="L12M_graphs.PNG" alt="Screenshot 3">
+            </div>
+            <div class="right-container-portfolio">
+                <div class="description">
+                    <h2><b>Trend Analysis</b></h2>
+                    <br>
+                    <ul>
+                        <li>Simple analysis of L12M Revenue, Net Income and Gross Profit</li>
+                        <br>
+                        <li>Trend lines display benchmark comparisons</li>
+                        <br>
+                        <li>Page filters enable user to look at KPIs through lens of each business unit</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Income Statements -->
+        <div class="row">
+            <div class="right-container-portfolio">
+                <div class="description">
+                    <h2><b>Income Statements</b></h2>
+                    <br>
+                    <ul>
+                        <li>Standard consolidated income statements</li>
+                        <br>
+                        <li>Comparisons to budget, forecast, and prior year MTD/YTD</li>
+                        <br>
+                        <li>User able to filter to YTD or MTD using buttons and can drill down to income statement by business unit using page filters</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="left-container-portfolio">
+                <img class="screenshot" src="financial_statements.PNG" alt="Screenshot 4">
+            </div>
+        </div>
+        <!-- Balance Sheet -->
+        <div class="row">
+            <div class="left-container-portfolio">
+                <img class="screenshot" src="balance_sheet_edited.png" alt="Screenshot 3">
+            </div>
+            <div class="right-container-portfolio">
+                <div class="description">
+                    <h2><b>Balance Sheet</b></h2>
+                    <br>
+                    <ul>
+                        <li>Standard balance sheet, separated by column for each business segment</li>
+                        <br>
+                        <li>User able to dynamically select which Month, Year, or Quarter to view</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

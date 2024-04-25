@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Portfolio</title>
+    <link rel="icon" type="image/png" href="pepper.png">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .container-operations {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center; /* Align rows with the center */
+            margin: 15 px;
+        }
+        .row {
+            display: flex;
+            width: 100%;
+            margin-bottom: 20px;
+            align-items: center; /* Align items within row with the center */
+        }
+        .left-container-operations,
+        .right-container-operations {
+            flex: 0 0 48%;
+            margin: 15px;
+        }
+        .screenshot {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+            border: 1px solid #000;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        }
+        .description {
+            border: 1px solid #000;
+            background-color: #fff;
+            padding: 10px;
+            /* Remove fixed height */
+            /* height: 100%; */
+            display: inline-block; /* Make description boxes wrap around content */
+            /* Add max-width to prevent description boxes from expanding too much */
+            max-width: 80%; /* Adjust max-width as needed */
+            text-align: center; /* Align content within description box */
+        }
+        .right-container-operations {
+            display: flex;
+            justify-content: center; /* Align description box in center of column */
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav>
+            <a href="./index.html">home</a>
+            <a href="./resume.html">resume</a>
+            <a href="./portfolio.html">portfolio</a>
+            <a href="./contact.html">contact</a>
+            <a href="https://skateschool.substack.com/">skate school</a>
+            <a href="./hobbies.html">hobbies</a>
+        </nav>
+    </header>
+    <div class="container-operations">
+       
+        <!-- Logan Storage -->
+        <div class="row">
+            <div class="left-container-operations">
+                <img class="screenshot" src="storage_capacity.PNG" alt="Screenshot 1">
+            </div>
+            <div class="right-container-operations">
+                <div class="description">
+                    <h2><b>Storage Capacity Simulation</b></h2>
+                    <br>
+                    <p>description</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Athens Throughput -->
+        <div class="row">
+            <div class="right-container-operations">
+                <div class="description">
+                    <h2><b>Throughput Analysis</b></h2>
+                    <br>
+                    <p>throughput / inputs vs. goals</p>
+                </div>
+            </div>
+            <div class="left-container-operations">
+                <img class="screenshot" src="Production_Athens.PNG" alt="Screenshot 2">
+            </div>
+        </div>
+
+       <!-- Logan Machine Demand -->
+        <div class="row">
+            <div class="left-container-operations">
+                <img class="screenshot" src="machine_demand.PNG" alt="Screenshot 3">
+            </div>
+            <div class="right-container-operations">
+                <div class="description">
+                    <h2><b>Machine Demand Prediction</b></h2>
+                    <br>
+                    <p>Description of Screenshot 3</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Athens Downtime -->
+        <div class="row">
+            <div class="right-container-operations">
+                <div class="description">
+                    <h2><b>Downtime Report</b></h2>
+                    <br>
+                    <p>Downtime reporting. Machine vs. operational dt</p>
+                </div>
+            </div>
+            <div class="left-container-operations">
+                <img class="screenshot" src="Downtime_Report_Athens.PNG" alt="Screenshot 4">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

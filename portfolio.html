@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="icon" type="image/png" href="pepper.png">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .container_hobby {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: stretch; /* Ensures all containers have the same height */
+            margin-top: 20px;
+        }
+        .hobby {
+            width: 300px;
+            padding: 20px;
+            margin-bottom: 20px;
+            border: 1px solid black;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: #e5e7eb;;
+        }
+        .hobby img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+        .hobby h2 {
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+        .hobby p {
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="./index.html">home</a>
+            <a href="./resume.html">resume</a>
+            <a href="./portfolio.html">portfolio</a>
+            <a href="./contact.html">contact</a>
+            <a href="https://skateschool.substack.com/">skate school</a>
+            <a href="./hobbies.html">hobbies</a>
+        </nav>
+    </section>
+
+    <div class="container_hobby">
+        <!-- Financial BI reporting -->
+        <div class="hobby">
+            <img src="revenue_breakdown.PNG" alt="HGC Rev">
+            <a href="financial.reporting.html"><h2>Financial Reporting</h2></a>
+            <p>Containing: income statement, balance sheet, cash flow analysis, profit analysis, budget analysis, etc.</p>
+        </div>
+
+        <!-- Operational BI reporting -->
+        <div class="hobby">
+            <img src="storage_capacity.PNG" alt="Logan Vis">
+            <a href="operational.reporting.html"><h2>Operational Reporting</h2></a>
+            <p>Operational reporting: downtime analysis, quality analysis, throughput, storage analysis, production floor simulation.</p>
+        </div>
+
+        <!-- Personal Website Code -->
+        <div class="hobby">
+            <img src="hanglide.jpeg" alt="Hanglide pic">
+            <a href="https://github.com/stollerjackson5/jackson-stoller-website"><h2>This Website!</h2></a>
+            <p>Built all of this for fun!</p>
+        </div>
+
+        <!-- PBI Youtube Videos -->
+        <div class="hobby">
+            <img src="Quality_Athens.PNG" alt="Instagram">
+            <a href="https://www.youtube.com/@jacksonstoller5386/videos"><h2>Power BI YouTube Course</h2></a>
+            <p>Power BI Basics Course</p>
+        </div>
+    </div>
+</body>
+</html>

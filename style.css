@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*HOME PAGE*/
+body {
+    font-family: Arial, sans-serif;
+    background-color: #d4d4d4; /* Set background color to bisque */
+}
+
+.header {
+    background-color: #395a72;
+    padding: 35px 0;
+    text-align: center;
+}
+
+nav a {
+    margin: 0 10px;
+    text-decoration: rgb(64, 64, 64);
+    font-size: larger;
+    color:#d4d4d4;
+}
+
+.container {
+    display: flex;
+    max-width: 920px;
+    margin: 0 auto;
+    padding: 25px;
+}
+
+.about-me {
+    flex: 1;
+    margin-right: 20px;
+    border: 2px solid black;
+    padding: 15px;
+    background-color: #e5e7eb; /* Set background color to bisque */
+    border-radius: 10px; /* Rounded corners for container */
+    color: #395a72;
+}
+
+.gallery {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4px;
+    border-radius: 10px; /* Rounded corners for container */
+}
+
+.gallery img {
+    width: 100%;
+    border: 2px solid black;
+}
+
+/*HOBBIES PAGE*/
+
+/* Define a custom color palette */
+:root {
+    --primary-color: #495283; /* Dark blue */
+    --secondary-color: #395a72; /* light purple */
+    --tertiary-color: #82c487; /* lightreen */
+}
+
+/* Define a custom font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+.container_hobby {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.hobby {
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid var(--primary-color);
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    background-color: #e5e7eb; /* Light grey background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    transition: box-shadow 0.3s ease;
+    border-radius: 10px; /* Rounded corners for container */
+}
+
+.hobby:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Slightly elevated on hover */
+}
+
+.hobby img {
+    max-width: 100px;
+}
+
+.hobby h2 {
+    margin-top: 10px;
+    color: var(--secondary-color); /* Pink title */
+}
+
+.hobby p {
+    margin-top: 10px;
+    color: #666; /* Grey text */
+}
+
+.hobby a {
+    display: block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: var(--tertiary-color); /* Green link */
+}
+
+.hobby a:hover {
+    color: #333; /* Darken link on hover */
+}
